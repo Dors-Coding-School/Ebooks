@@ -5,3 +5,5 @@ def get_sum_digits(x):
     if isAlternateDigit:
       sum += x % 10
     isAlternateDigit = not isAlternateDigit
+    sum //= 10
+  return sum
